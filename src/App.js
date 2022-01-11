@@ -1,25 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import Dropdown from 'react-dropdown';
+import 'react-dropdown/style.css';
+import EffectsManager from './components/EffectsManager';
+import React, { useState } from "react";
 
 function App() {
+
+  const options = [
+    'Zoom in effect', 'Zoom put effect', 'Fade effect'
+  ];
+  const defaultOption = options[0];
+
+  const [currentEffectSelection, setEffectSelection] = useState("None");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Dropdown onChange={(e) => setEffectSelection(e.value)} options={options} placeholder="Select an option"/>
+
+      <EffectsManager currentEffectSelection={currentEffectSelection} />
     </div>
   );
+
 }
 
 export default App;
