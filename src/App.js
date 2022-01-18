@@ -7,7 +7,7 @@ import React, { useState } from "react";
 function App() {
 
   const options = [
-    'Zoom in effect', 'Zoom put effect', 'Fade effect'
+    'Sliding effect', 'Zoom in effect', 'Zoom out effect', 'Fade effect'
   ];
   const defaultOption = options[0];
 
@@ -15,7 +15,8 @@ function App() {
 
   return (
     <div>
-      <Dropdown onChange={(e) => setEffectSelection(e.value)} options={options} placeholder="Select an option"/>
+      <Dropdown style = {{ margin: "auto", width: "50%", border: "3px solid green", padding: "10px" }}
+       onChange={(e) => setEffectSelection(e.value)} options={options} placeholder="Select an option"/>
 
       <EffectsManager currentEffectSelection={currentEffectSelection} />
     </div>
