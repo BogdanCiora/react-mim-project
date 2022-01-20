@@ -1,6 +1,6 @@
 import React from 'react';
 import { Slide } from 'react-slideshow-image';
-import '../styling/styling.css'
+import 'react-slideshow-image/dist/styles.css';
 
 const slideImages = [
   'slide1',
@@ -10,16 +10,16 @@ const slideImages = [
 
 const SlidingComponent = () => {
     return (
-        <div style={{ width: "50%" }}>
+        <div>
             <Slide easing="ease">
-                <div style={{ display: "flex", alignItems: "center", justifyContent: "center", backgroundSize: "cover", height: "350px" }}>
-                    <img style={{ width: "50%" }} src={require("../images/" + slideImages[0] + ".jpg")} />
+                <div class="each-slide">
+                    <img style={{ width: "60%", paddingLeft: "20%", paddingTop: "3%" }} src={require("../images/" + slideImages[0] + ".jpg")} />
                 </div>
-                <div style={{ display: "flex", alignItems: "center", justifyContent: "center", backgroundSize: "cover", height: "350px" }}>
-                    <img style={{ width: "50%" }} src={require("../images/" + slideImages[1] + ".jpg")} />
+                <div class="each-slide">
+                    <img style={{ width: "60%", paddingLeft: "20%", paddingTop: "3%" }} src={require("../images/" + slideImages[1] + ".jpg")} />
                 </div>
-                <div style={{ display: "flex", alignItems: "center", justifyContent: "center", backgroundSize: "cover", height: "350px" }}>
-                    <img style={{ width: "50%" }} src={require("../images/" + slideImages[2] + ".jpg")} />
+                <div class="each-slide">
+                    <img style={{ width: "60%", paddingLeft: "20%", paddingTop: "3%" }} src={require("../images/" + slideImages[2] + ".jpg")} />
                 </div>
             </Slide>
         </div>

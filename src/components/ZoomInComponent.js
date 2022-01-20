@@ -1,12 +1,11 @@
 import React from 'react';
 import { Zoom } from 'react-slideshow-image';
-import '../styling/styling.css'
 
 const ZoomInComponent = () => {
     const images = [
-        "slide1",
-        "slide2",
-        "slide3"
+        "slide4",
+        "slide5",
+        "slide6"
     ];
 
     const zoomInProperties = {
@@ -17,8 +16,8 @@ const ZoomInComponent = () => {
         <div>
             <Zoom {...zoomInProperties}>
                 {images.map((each, index) => (
-                    <div key={index} style={{ width: "70%" }}>
-                        <img style={{ objectFit: "cover", width: "50%" }} src={require("../images/" + each + ".jpg")} />
+                    <div key={index} style={{ width: "100%" }}>
+                        <img style={{ objectFit: "cover", width: "60%", paddingLeft: "20%", paddingTop: "3%" }} src={require("../images/" + each + ".jpg")} />
                     </div>
                 ))}
             </Zoom>
