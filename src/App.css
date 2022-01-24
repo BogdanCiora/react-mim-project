@@ -39,6 +39,35 @@
 
 /*My stylings*/
 
+/* Main page */
+
+.main-page-content {
+  color: white;
+  padding-left: 29%;
+  padding-top: 9.85%;
+  padding-bottom: 21.5%;
+}
+
+.main-page-text {
+  font-family: serif;
+  font-size: xxx-large;
+  text-shadow: 5px -2px 6px black;
+}
+
+.main-page-first-text {
+  padding-left: 24%;
+}
+
+.main-page-second-text {
+
+}
+
+.main-page-third-text {
+  padding-left: 19%;
+}
+
+/* Buttons */
+
 .dropdown-adjustments {
   margin: auto;
   width: 50%;
@@ -47,7 +76,34 @@
 }
 
 .buttons-position {
-  padding-top: 2%;
-  padding-left: 48.5%;
-  padding-bottom: 4%;
+  padding-left: 43.5%;
+  padding-bottom: 1.875%;
+}
+
+.autoplay-buttons-text {
+  color: white;
+  font-family: serif;
+  font-size: xxx-large;
+  text-shadow: 5px -2px 6px black;
+}
+
+.autoplay-buttons-position {
+  position: relative;
+  top: 10px;
+}
+
+.button-play {
+  width: 100px;
+  height: 50px;
+  font-size: larger;
+  position: relative;
+  left: 40px;
+}
+
+.button-pause {
+  width: 100px;
+  height: 50px;
+  font-size: larger;
+  position: relative;
+  left: 55px;
 }

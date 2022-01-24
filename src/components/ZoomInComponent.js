@@ -12,7 +12,8 @@ const ZoomInComponent = () => {
     const zoomInProperties = {
         indicators: true,
         scale: 1.4,
-        pauseOnHover: true
+        pauseOnHover: true,
+        duration: 2500
     }
 
     const [autoplay, setAutoplay] = useState(true);
@@ -31,12 +32,12 @@ const ZoomInComponent = () => {
             </div>
 
             <div className='buttons-position'>
-                <div className="autoplay-buttons">
-                    Autplay is {autoplay ? 'on' : 'off'}
+                <div className="autoplay-buttons autoplay-buttons-text">
+                    Autoplay is {autoplay ? 'on' : 'off'}
                 </div>
-                <div className="autoplay-buttons">
-                    <button type="button" onClick={() => setAutoplay(false)}>Pause</button>
-                    <button type="button" onClick={() => setAutoplay(true)}>Play</button>
+                <div className="autoplay-buttons autoplay-buttons-position">
+                    <button type="button" className='button-play' onClick={() => setAutoplay(true)}>Play</button>
+                    <button type="button" className='button-pause' onClick={() => setAutoplay(false)}>Pause</button>
                 </div>
             </div>
 

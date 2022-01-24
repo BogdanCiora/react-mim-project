@@ -3,7 +3,6 @@ import ZoomInComponent from './ZoomInComponent';
 import ZoomOutComponent from './ZoomOutComponent';
 import FadeComponent from './FadeComponent';
 import SlidingComponent from './SlidingComponent';
-import './Components.css';
 
 function EffectsManager(props) {
 
