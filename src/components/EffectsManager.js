@@ -3,6 +3,7 @@ import ZoomInComponent from './ZoomInComponent';
 import ZoomOutComponent from './ZoomOutComponent';
 import FadeComponent from './FadeComponent';
 import SlidingComponent from './SlidingComponent';
+import './Components.css';
 
 function EffectsManager(props) {
 
@@ -27,7 +28,13 @@ function EffectsManager(props) {
 
                 return <FadeComponent />
 
-            default: return <h1>No component match</h1>
+            default: return (
+                <div className='main-page-content'>
+                    <h1 className='main-page-text main-page-first-text'>Proiect</h1>
+                    <h1 className='main-page-text main-page-second-text'>Managementul informației și multimedia</h1>
+                    <h1 className='main-page-text main-page-third-text'>Ciora Bogdan</h1>
+                </div>
+            );
         }
     }
 
